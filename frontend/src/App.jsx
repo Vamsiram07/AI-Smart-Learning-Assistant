@@ -1,5 +1,7 @@
 
 import { useState, useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import "./App.css";
 
 const API_URL = "http://127.0.0.1:5000";
@@ -522,7 +524,11 @@ function App() {
                 {item.role !== "user" && <span className="message-avatar">✦</span>}
                 <div className="message-bubble">
                   <small>{item.role === "user" ? "You" : "LearnSphere AI"}</small>
-                  <p>{item.content}</p>
+                  <div className="markdown-content">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                      {item.content}
+                    </ReactMarkdown>
+                  </div>
                 </div>
               </div>
             ))}

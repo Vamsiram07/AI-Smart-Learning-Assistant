@@ -1081,3 +1081,20 @@ button:disabled { cursor: not-allowed; opacity: .6; }
   .chat-welcome h2 { font-size: 18px; }
   .topbar-status { display: none; }
 }
+/* Wider AI chatbot responses */
+.ai-message {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ai-message .message-bubble {
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.ai-message .markdown-content {
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
