@@ -18,7 +18,7 @@ The platform provides three major features: AI Notes Preparation, AI Image Recog
 - Simplify lengthy study materials.
 
 ### 2.2 AI Image Recognition
-- Upload images for automatic object recognition.
+- Uploaded images for automatic object recognition.
 - Use pretrained MobileNetV3 Large with ImageNet.
 - Recognize objects across 1,000 ImageNet categories.
 - Display the top five predictions with confidence scores.
